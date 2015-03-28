@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 /**
- * Created by youdelu on 2015/3/23.
+ * Created by Chairman on 2015/3/23.
  */
 public class ChatMessage {
 
