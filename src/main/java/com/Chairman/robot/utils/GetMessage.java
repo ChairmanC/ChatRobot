@@ -18,7 +18,7 @@ import com.Chairman.robot.bean.OrderResult;
 import com.Chairman.robot.bean.Result;
 import com.Chairman.robot.bean.TrainResult;
 /**
- * Created by youdelu on 2015/3/23.
+ * Created by Chairman on 2015/3/23.
  */
 public class GetMessage{
     private static String API_KEY = "d0600b1cd6bdb4c4ed210bf867f41c79";
