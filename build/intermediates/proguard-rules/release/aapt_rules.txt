@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:26
+-keep class com.Chairman.robot.MainActivity { <init>(...); }
+
+# onClick res/layout/main_chatting.xml #generated:65
+-keepclassmembers class * { *** sendMessage(...); }
+

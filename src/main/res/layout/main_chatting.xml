@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ly_chat_title"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="6dp"
+        android:layout_height="45dp"
+     >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="与Baymax聊天中"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_chat_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+  >
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/id_chat_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ly_chat_title"
+        android:cacheColorHint="#fff"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_above="@+id/id_chat_msg">
+    </ListView>
+
+    <EditText
+        android:hint="请在这里输入内容"
+        android:background="@null"
+        android:id="@+id/id_chat_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:layout_above="@+id/ly_chat_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/AppTheme"
+        />
+
+    <ImageButton
+        android:id="@+id/id_chat_send"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:onClick="sendMessage"
+        android:background="@null"
+        android:src="@drawable/sent"
+        android:layout_alignTop="@+id/id_chat_msg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
